@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from "./User.module.css"
+import styles from "./Hero.module.css"
 
-type UserBlockType = {
+type HeroBlockType = {
     photo: string | null
     name: string
     position: string
@@ -9,7 +9,7 @@ type UserBlockType = {
     phone: string
 }
 
-const User = (props: UserBlockType) => {
+const Hero = (props: HeroBlockType) => {
     return (
         <div className={styles.block}>
             {props.photo && (
@@ -29,24 +29,4 @@ const User = (props: UserBlockType) => {
     );
 };
 
-
-// interface EmailProps {
-//     email: string;
-// }
-
-// const EmailComponent: React.FC<EmailProps> = ({ email }) => {
-//     const copyToClipboard = (text: string) => {
-//         navigator.clipboard.writeText(text);
-//         alert("Email скопирован: " + text);
-//     };
-//
-//     return (
-//         <div>
-//             <span className={styles.email} onClick={() => copyToClipboard(email)}>
-//         {email}
-//       </span>
-//         </div>
-//     );
-// };
-
-export default User;
+export default Hero;

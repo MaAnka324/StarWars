@@ -1,18 +1,11 @@
 import React from 'react';
 import './App.css';
-import Header from "./components/Header";
-import Main from "./components/Main";
-import Users from "./components/Users";
-import FormComponent from "./components/FormComponent";
+import Heroes from "./components/Heroes";
 
 function App() {
     return (
             <div className="App">
-                <Header/>
-                <Main/>
-                <Users/>
-                <FormComponent/>
-                <p>Hello World</p>
+                <Heroes/>
             </div>
     );
 }
